@@ -1,0 +1,39 @@
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 800px; /* Adjust to your preference */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 1px solid #ddd; /* Optional: Adds a border around the container */
+    border-radius: 10px; /* Optional: Rounds the corners */
+    background-color: #f9f9f9; /* Optional: Adds a subtle background */
+  }
+  
+  .contact-info {
+    flex: 1; /* Take equal space */
+    text-align: left;
+    margin-right: 20px; /* Add spacing between text and flag */
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin: 8px 0;
+  }
+  
+  .flag-container {
+    flex: 1; /* Take equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .oman-flag {
+    max-width: 100%; /* Ensure it scales */
+    max-height: 150px; /* Restrict height */
+    object-fit: contain; /* Keep aspect ratio */
+  }
+  
