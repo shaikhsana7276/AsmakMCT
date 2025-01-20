@@ -1,37 +1,69 @@
 
- /* *{
-    background-color: #fadadd;
- } */
+/* General Reset for Navbar Links */
 .nav-link {
     font-weight: 500;
     text-decoration: none; /* Remove default underline */
-    color: black; /* Text color */
-    border-bottom: 2px solid transparent; /* Invisible underline */
+    color: black; /* Default text color */
+    border-bottom: 2px solid transparent; /* Invisible underline initially */
     transition: border-color 0.3s ease; /* Smooth transition for underline */
   }
   
+  /* Hover and Active State for Navbar Links */
   .nav-link:hover,
   .nav-link.active {
     border-bottom: 2px solid #007bff; /* Underline on hover or active */
-    color: #007bff;
+    color: #007bff; /* Change text color to blue */
   }
   
-.main-cards{
+  /* Main Cards Section */
+  .main-cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-
-}
-
-.main-cards .card{
+  }
+  
+  .main-cards .card {
     width: 300px;
-    
-}
-.main-cards .card .card-text{
+  }
+  
+  .main-cards .card .card-text {
     height: 55%;
-    
-}
-.main-cards .card img{
+  }
+  
+  .main-cards .card img {
     height: 200px;
     object-fit: cover;
-}
+  }
+  
+  /* Responsive Navbar Styles */
+  @media (max-width: 768px) {
+    /* Adjust the navbar for smaller screens */
+    .navbar-nav {
+      text-align: center; /* Center-align navbar links */
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px; /* Add space between navbar items */
+    }
+  
+    /* Ensure the toggle button is properly visible on mobile */
+    .navbar-toggler {
+      border-color: #007bff;  /* Optional: Make the border color blue */
+    }
+  
+    /* Make the navbar full width and remove margins */
+    .navbar-collapse {
+      width: 100%;
+    }
+  
+    /* Adjust the navbar link styles for mobile */
+    .navbar-nav .nav-link {
+      font-size: 16px;  /* Slightly smaller font for mobile */
+      padding: 10px;
+    }
+  
+    .navbar-brand {
+      margin-right: 0;
+    }
+  }
+  

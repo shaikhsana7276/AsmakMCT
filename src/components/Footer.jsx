@@ -1,5 +1,8 @@
+
 import React from "react";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { NavLink } from "react-router-dom";  // Import NavLink
+
 const Footer = () => {
   return (
     <footer className="bg-dark text-light py-5 mt-5">
@@ -21,24 +24,40 @@ const Footer = () => {
             <h6 className="text-uppercase">Quick Links</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="/" className="text-light text-decoration-none">
+                <NavLink
+                  to="/"
+                  className="text-light text-decoration-none"
+                  activeClassName="active"  // Apply active class
+                >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/about" className="text-light text-decoration-none">
+                <NavLink
+                  to="/about"
+                  className="text-light text-decoration-none"
+                  activeClassName="active"  // Apply active class
+                >
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/services" className="text-light text-decoration-none">
+                <NavLink
+                  to="/services"
+                  className="text-light text-decoration-none"
+                  activeClassName="active"  // Apply active class
+                >
                   Services
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/contact" className="text-light text-decoration-none">
+                <NavLink
+                  to="/contact"
+                  className="text-light text-decoration-none"
+                  activeClassName="active"  // Apply active class
+                >
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

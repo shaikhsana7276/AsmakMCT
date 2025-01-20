@@ -7,7 +7,8 @@ import AboutUs from "./pages/AboutUs";
 import Location from "./pages/Location";
 import Product from "./pages/Product"
 import ContactUs from "./pages/ContactUs";
-
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <>

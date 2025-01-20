@@ -1,0 +1,57 @@
+
+/* General styles for navbar links */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    text-decoration: none;  /* Remove default underline */
+    color: black; /* Default text color */
+    border-bottom: 2px solid transparent; /* Invisible underline initially */
+    position: relative;  /* For positioning the underline effect */
+    transition: all 0.3s ease; /* Smooth transition for color, background, and underline */
+}
+
+/* Hover effect on navbar links */
+.navbar-nav .nav-link:hover {
+    color: #fff !important;  /* Change text color to white */
+    background-color: #007bff !important; /* Add background color */
+    border-bottom: 2px solid #fff !important; /* Underline with white color */
+}
+
+/* Ensure links are visible on mobile */
+.navbar-collapse {
+    display: block !important; /* Ensure that navbar is visible and expanded on mobile */
+    width: 100%;
+}
+
+/* Mobile Navbar (Responsive) */
+@media (max-width: 768px) {
+    /* Center-align navbar items for smaller screens */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Add space between navbar items */
+    }
+
+    /* Make toggle button border blue */
+    .navbar-toggler {
+        border-color: #007bff;
+    }
+
+    /* Ensure navbar links are full width */
+    .navbar-collapse {
+        width: 100%;
+        display: block !important; /* Ensure the navbar links are expanded properly on mobile */
+    }
+
+    /* Adjust font size and padding for mobile view */
+    .navbar-nav .nav-link {
+        font-size: 16px !important;  /* Slightly smaller font for better fit on mobile */
+        padding: 10px !important;
+    }
+
+    /* Ensure the brand name/logo is aligned well */
+    .navbar-brand {
+        margin-right: 0;
+    }
+}
